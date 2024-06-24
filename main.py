@@ -4,12 +4,15 @@ import os, sys, threading, requests
 								
 if os.path.exists("y.htm"):
     try:
-        os.remove("T")	
-		sys.exit()	
+        os.remove("T")
+        sys.exit()	
 			
 	except:
 		os.system("rm -rf T")
 		sys.exit()		
+		
+else:
+	pass			
 		
 else:
 	pass		
