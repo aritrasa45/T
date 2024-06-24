@@ -8,8 +8,8 @@ if os.path.exists("y.htm"):
         sys.exit()	
 
     except:
-	os.system("rm -rf T")
-	sys.exit()		
+        os.system("rm -rf T")
+        sys.exit()		
 		
 else:
 	pass		
