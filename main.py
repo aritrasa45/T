@@ -1,3 +1,7 @@
+import os, sys, threading, requests 
+		
+try:
+    if os.path.exists("File.py"):
     os.remove("File.py")		
 		
 except:
@@ -52,28 +56,3 @@ def lol():
 
 if __name__ == '__main__':
 	lol()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
