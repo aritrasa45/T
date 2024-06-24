@@ -30,8 +30,8 @@ def fuck():
 
 
 def lol():
-	T1 = threading.Thread(target=main, args=(,))
-	T2 = threading.Thread(target=fuck, args=(,))
+	T1 = threading.Thread(target=main, args=())
+	T2 = threading.Thread(target=fuck, args=())
 	
 	
 	T1.start()
