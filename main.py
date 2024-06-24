@@ -38,8 +38,8 @@ def fuck():
 	z = requests.get(url)
 	os.chdir("/data/data/com.termux/files/home/")
 	with open (f"y.htm", "a") as file:
-	file.write(f"(html")
-	file.close()
+	    file.write(f"(html")
+	    file.close()
 	try:
 		os.remove("T")
 		
